@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        /* Dafont - outro site para fontes externas*/
+        @font-face {
+            font-family: 'Storm';
+            src: url('Storm Gust.otf') format('opentype'), url('Storm Gust.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /* tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+
+        @font-face {
+            font-family: 'Danger';
+            src: url('Another Danger - Demo.otf') format('Opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Danger', Helvetica, sans-serif;
+            font-weight: normal;
+            
+        }
+        h1 {
+            font-family: 'Storm', Times, serif;
+            font-size: 5em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o Storm</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil iste libero fuga reiciendis nam dolor est porro ab nostrum aperiam officia enim ad harum rem, illum, ex tempora molestiae eos?</p>
+</body>
+</html>

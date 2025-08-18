@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;       
+            margin: 0px;  
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        nav {
+            background-color: rgb(155, 155, 155);
+            padding: 3px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.493);
+            box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.315);
+            border-radius: 5px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0px 0px 5px 0px;
+        }
+
+        article > aside {
+            background-color: rgb(163, 163, 163);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Guerras pelo mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, nisi reiciendis sunt debitis praesentium quasi corporis obcaecati error quisquam laboriosam. Laborum inventore mollitia rem nisi in repudiandae? Quisquam, vitae neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga qui tenetur minus voluptatibus tempore quis animi eos, nisi perspiciatis, laboriosam fugiat praesentium molestiae quidem blanditiis a nemo non enim unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime provident veritatis non sequi, dicta magni magnam impedit voluptatibus earum consequatur nesciunt, nulla, hic pariatur ullam? Nihil vel mollitia numquam?</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article id="brasil">
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quos, ipsa iste quo optio illum atque saepe maxime iure necessitatibus quisquam, incidunt minus corporis dolor nemo! Beatae illo unde iure!</p>
+                <aside>
+                    <p>Artigo escrito por josé</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por: Gustavo Mello</p>
+    </footer>
+</body>
+</html>
