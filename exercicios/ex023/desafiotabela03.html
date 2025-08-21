@@ -30,6 +30,12 @@
             text-align: center;
         }
 
+        .total {
+            background-color: rgb(168, 163, 163);
+            color: white;
+            text-align: center;
+       }
+
         .area {
             background-color: white;
             color: black;
@@ -41,10 +47,10 @@
    <table>
     <thead>
         <tr>
-            <th rowspan="2">Área</th>
-            <th rowspan="2">Disciplina</th>
-            <th colspan="2">Notas</th>
-            <th rowspan="2">Média</th>
+            <th rowspan="2" scope="col">Área</th>
+            <th rowspan="2" scope="col">Disciplina</th>
+            <th colspan="2" scope="colgroup">Notas</th>
+            <th rowspan="2" scope="col">Média</th>
         </tr>
         <tr>
             <th>Nota 1</th>
@@ -53,7 +59,7 @@
     </thead>
     <tbody>
         <tr>
-            <th rowspan="4" class="area">Exatas</th>
+            <th rowspan="4" class="area" scope="rowgroup">Exatas</th>
             <td>Matemática</td>
             <td class="nota">0.0</td>
             <td class="nota">0.0</td>
@@ -78,11 +84,11 @@
             <td class="nota">0.0</td>
         </tr>
         <tr>
-            <th colspan="4">Média de Exatas</th>
-            <td class="nota">0.0</td>
+            <th colspan="4" scope="row">Média de Exatas</th>
+            <td class="total"><strong>0.0</strong></td>
         </tr>
         <tr>
-            <th rowspan="2" class="area">Humanas</th>
+            <th rowspan="2" class="area" scope="rowgroup">Humanas</th>
             <td>História</td>
             <td class="nota">0.0</td>
             <td class="nota">0.0</td>
@@ -95,8 +101,8 @@
             <td class="nota">0.0</td>
         </tr>
         <tr>
-            <th colspan="4">Média de Humanas</th>
-            <td class="nota">0.0</td>
+            <th colspan="4" scope="row">Média de Humanas</th>
+            <td class="total"><strong>0.0</strong></td>
         </tr>
     </tbody>
 
